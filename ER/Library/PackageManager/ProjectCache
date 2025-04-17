@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638799723908362002
-    m_Hash: 3901250030
+      ticks: 638804734487659598
+    m_Hash: 158879224
   m_LockFileStatus:
     m_FilePath: C:/Users/zinee/ExtendedReality/ER/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638799723908412289
-    m_Hash: 1565123377
+      ticks: 638804734487715602
+    m_Hash: 2989591883
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -1252,12 +1252,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.xr.interaction.toolkit@3.0.3
+- packageId: com.unity.xr.interaction.toolkit@2.5.4
   testable: 0
   isDirectDependency: 1
-  version: 3.0.3
+  version: 2.5.4
   source: 1
-  resolvedPath: C:\Users\zinee\ExtendedReality\ER\Library\PackageCache\com.unity.xr.interaction.toolkit@3.0.3
+  resolvedPath: C:\Users\zinee\ExtendedReality\ER\Library\PackageCache\com.unity.xr.interaction.toolkit@2.5.4
   assetPath: Packages/com.unity.xr.interaction.toolkit
   name: com.unity.xr.interaction.toolkit
   displayName: XR Interaction Toolkit
@@ -1355,10 +1355,8 @@ m_ResolvedPackages:
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
-  - name: com.unity.modules.xr
-    version: 1.0.0
   - name: com.unity.inputsystem
-    version: 1.8.1
+    version: 1.7.0
   - name: com.unity.mathematics
     version: 1.2.6
   - name: com.unity.modules.audio
@@ -1369,6 +1367,8 @@ m_ResolvedPackages:
     version: 2.2.3
   - name: com.unity.modules.physics
     version: 1.0.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.10
   resolvedDependencies:
   - name: com.unity.ugui
     version: 1.0.0
@@ -1376,17 +1376,11 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.unity.modules.xr
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
   - name: com.unity.inputsystem
     version: 1.8.1
   - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.mathematics
     version: 1.2.6
@@ -1394,6 +1388,16 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.xr.core-utils
     version: 2.3.0
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.10
+  - name: com.unity.modules.vr
+    version: 1.0.0
   keywords:
   - XR
   - VR
@@ -1409,13 +1413,13 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638503587480000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.0/manual/index.html
+  datePublishedTicks: 638484578960000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.5/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/com.unity.xr.interaction.toolkit.git
-    revision: a6082ebcc6d8b986a9d2603a2c20b322d26aa5b8
+    revision: e01bea0029c4995e80fe3e3f8a24f92e1cad1f4c
     path: 
   unityLifecycle:
     version: 2.5.2
