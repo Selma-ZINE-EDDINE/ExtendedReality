@@ -15,7 +15,7 @@ C:/Users/zinee/ExtendedReality/ER
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51907
+53398
 Successfully changed project path to: C:/Users/zinee/ExtendedReality/ER
 C:/Users/zinee/ExtendedReality/ER
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,13 +49,13 @@ C:/Users/zinee/ExtendedReality/ER
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [17096] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3481097533 [EditorId] 3481097533 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [23100] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 582999357 [EditorId] 582999357 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [17096] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3481097533 [EditorId] 3481097533 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [23100] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 582999357 [EditorId] 582999357 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 31.33 ms, found 12 plugins.
-Preloading 1 native plugins for Editor in 0.78 ms.
+Refreshing native plugins compatible for Editor in 29.59 ms, found 12 plugins.
+Preloading 1 native plugins for Editor in 0.70 ms.
 Initialize engine version: 2022.3.21f1 (bf09ca542b87)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/zinee/ExtendedReality/ER/Assets
@@ -70,47 +70,56 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56484
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56744
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008853 seconds.
-- Loaded All Assemblies, in  0.354 seconds
+Registered in 0.009227 seconds.
+- Loaded All Assemblies, in  0.443 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 296 ms
+CommandWithNoStdoutInvokationFailure: Unable to start ADB server. Please make sure the Android SDK is installed and is properly configured in the Editor. See the Console for more details.
+  at UnityEditor.Android.Command.RunWithShellExecute (System.String command, System.String args, System.String workingdir, System.String errorMsg) [0x00060] in <c4379596d7a6422890664bcfc2916b9b>:0 
+  at UnityEditor.Android.ADB.StartServer () [0x00013] in <c4379596d7a6422890664bcfc2916b9b>:0 
+  at UnityEditor.Android.ADB.Run (System.String[] command, UnityEditor.Android.Command+WaitingForProcessToExit waitingForProcessToExit, System.String errorMsg) [0x0000b] in <c4379596d7a6422890664bcfc2916b9b>:0 
+  at UnityEditor.Android.AndroidDeploymentTargetsExtension.GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext context, UnityEditor.ProgressHandler progressHandler) [0x00284] in <c4379596d7a6422890664bcfc2916b9b>:0 
+  at UnityEditor.Android.TargetScanWorker.ScanSync () [0x00039] in <c4379596d7a6422890664bcfc2916b9b>:0 
+  at UnityEditor.Android.TargetExtension.OnUsbDevicesChanged (UnityEditor.Hardware.UsbDevice[] usbDevices) [0x00081] in <c4379596d7a6422890664bcfc2916b9b>:0 
+  at UnityEditor.Android.TargetExtension.OnLoad () [0x000ad] in <c4379596d7a6422890664bcfc2916b9b>:0 
+  at UnityEditor.Modules.ModuleManager.InitializePlatformSupportModules () [0x0009d] in <24e1ed8728684ea3ae446f80787d18de>:0 
+
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.614 seconds
-Domain Reload Profiling: 966ms
-	BeginReloadAssembly (109ms)
+- Finished resetting the current domain, in  4.215 seconds
+Domain Reload Profiling: 4655ms
+	BeginReloadAssembly (158ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (146ms)
-		LoadAssemblies (107ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (173ms)
+		LoadAssemblies (157ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (144ms)
-			TypeCache.Refresh (142ms)
-				TypeCache.ScanAssembly (130ms)
+		AnalyzeDomain (168ms)
+			TypeCache.Refresh (167ms)
+				TypeCache.ScanAssembly (152ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (615ms)
+	FinalizeReload (4215ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (558ms)
+		SetupLoadedEditorAssemblies (4162ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (411ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (3971ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (103ms)
-			ProcessInitializeOnLoadMethodAttributes (39ms)
+			ProcessInitializeOnLoadAttributes (134ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,8 +127,8 @@ Domain Reload Profiling: 966ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.807 seconds
-Refreshing native plugins compatible for Editor in 19.01 ms, found 12 plugins.
+- Loaded All Assemblies, in  0.923 seconds
+Refreshing native plugins compatible for Editor in 37.67 ms, found 12 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -148,47 +157,47 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.803 seconds
-Domain Reload Profiling: 1604ms
-	BeginReloadAssembly (154ms)
+- Finished resetting the current domain, in  0.860 seconds
+Domain Reload Profiling: 1778ms
+	BeginReloadAssembly (152ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (25ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (563ms)
-		LoadAssemblies (388ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (674ms)
+		LoadAssemblies (476ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (269ms)
-			TypeCache.Refresh (221ms)
-				TypeCache.ScanAssembly (200ms)
-			ScanForSourceGeneratedMonoScriptInfo (30ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (803ms)
+		AnalyzeDomain (288ms)
+			TypeCache.Refresh (225ms)
+				TypeCache.ScanAssembly (203ms)
+			ScanForSourceGeneratedMonoScriptInfo (44ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (861ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (597ms)
+		SetupLoadedEditorAssemblies (625ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (27ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (52ms)
+			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (85ms)
-			ProcessInitializeOnLoadAttributes (369ms)
-			ProcessInitializeOnLoadMethodAttributes (104ms)
+			BeforeProcessingInitializeOnLoad (102ms)
+			ProcessInitializeOnLoadAttributes (356ms)
+			ProcessInitializeOnLoadMethodAttributes (100ms)
 			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 37.19 ms, found 12 plugins.
-Preloading 1 native plugins for Editor in 0.12 ms.
+Refreshing native plugins compatible for Editor in 30.45 ms, found 12 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
 Unloading 6443 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 136 unused Assets / (1.6 MB). Loaded Objects now: 6909.
-Memory consumption went from 244.4 MB to 242.7 MB.
-Total: 10.845500 ms (FindLiveObjects: 1.176100 ms CreateObjectMapping: 0.713400 ms MarkObjects: 7.353100 ms  DeleteObjects: 1.600600 ms)
+Unloading 136 unused Assets / (1.6 MB). Loaded Objects now: 6910.
+Memory consumption went from 244.5 MB to 242.8 MB.
+Total: 8.720600 ms (FindLiveObjects: 1.121800 ms CreateObjectMapping: 0.608700 ms MarkObjects: 5.677500 ms  DeleteObjects: 1.308900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -204,142 +213,6 @@ AssetImportParameters requested are different than current active one (requested
   custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 32579.762012 seconds.
-  path: Assets/Sci-Fi Styled Modular Pack/Prefabs/Windows/Complete Windows/window_big_corner_blocker.prefab
-  artifactKey: Guid(c84375fce06f8f146a371128360dd36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi Styled Modular Pack/Prefabs/Windows/Complete Windows/window_big_corner_blocker.prefab using Guid(c84375fce06f8f146a371128360dd36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b807c2bef69dabf1ac9989cd75ac6a35') in 0.517116 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 44
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Sci-Fi Styled Modular Pack/Prefabs/Windows/Complete Windows/window_big_corner.prefab
-  artifactKey: Guid(b640a38ee3c65bc45963bd2f2f5b867f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi Styled Modular Pack/Prefabs/Windows/Complete Windows/window_big_corner.prefab using Guid(b640a38ee3c65bc45963bd2f2f5b867f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45a54a434e45c2a357bcfae2b3e8a7a1') in 0.028861 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 33
-========================================================================
-Received Import Request.
-  Time since last request: 1285.760574 seconds.
-  path: Assets/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Column/column_end.prefab
-  artifactKey: Guid(d10d3ce46f3a5d84cbcccd4f14bf3958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Column/column_end.prefab using Guid(d10d3ce46f3a5d84cbcccd4f14bf3958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bc4886a82408dcff6b3573ea126b68f') in 0.105404 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Column/column_middle.prefab
-  artifactKey: Guid(736d23d832d564c42a6b81c9fefb19bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Column/column_middle.prefab using Guid(736d23d832d564c42a6b81c9fefb19bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2563b7ce05a80996f01691d780af0969') in 0.030865 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 180.459603 seconds.
-  path: Assets/Lets Make a VR Game/Textures
-  artifactKey: Guid(e90658b71af6d254488a00d24b9d7b0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Lets Make a VR Game/Textures using Guid(e90658b71af6d254488a00d24b9d7b0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68be0a2ead6abaf17e6920335a42c770') in 0.001203 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.106689 seconds.
-  path: Assets/Lets Make a VR Game/Textures/360 Milky Way Panorama.tif
-  artifactKey: Guid(1c060492172894643aba4fd02f0c28c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Lets Make a VR Game/Textures/360 Milky Way Panorama.tif using Guid(1c060492172894643aba4fd02f0c28c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b4914f2e24e4373e6a0dbad7c91cded') in 0.026060 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.013662 seconds.
-  path: Assets/Lets Make a VR Game/Textures/Rock_Normal.png
-  artifactKey: Guid(bb34f217eb699c8429a73870f6e93ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Lets Make a VR Game/Textures/Rock_Normal.png using Guid(bb34f217eb699c8429a73870f6e93ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1431b9c9c48e615cf967eefc95d4d05f') in 0.029071 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 22.295041 seconds.
-  path: Assets/Lets Make a VR Game/Materials
-  artifactKey: Guid(396e51812b2ffa14c974cb9d91292a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Lets Make a VR Game/Materials using Guid(396e51812b2ffa14c974cb9d91292a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1333bcaa9b96b190645c5403d97bc4cb') in 0.000669 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.076262 seconds.
-  path: Assets/Lets Make a VR Game/Materials/Material.rocks.mat
-  artifactKey: Guid(ae93617c0f67d68468554dd626b1cd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Lets Make a VR Game/Materials/Material.rocks.mat using Guid(ae93617c0f67d68468554dd626b1cd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2374813299f44378c035af68d736bd7d') in 0.041690 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Lets Make a VR Game/Materials/Trash_mat.mat
-  artifactKey: Guid(889ebfdffb1dfce44af42bd3a6752b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Lets Make a VR Game/Materials/Trash_mat.mat using Guid(889ebfdffb1dfce44af42bd3a6752b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '362892e5cee1005594bdd986f97c2833') in 0.015628 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 24.646481 seconds.
-  path: Assets/Lets Make a VR Game/Materials/Milky Way Skybox.mat
-  artifactKey: Guid(f116071f53e02704fa5fcf4650365b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Lets Make a VR Game/Materials/Milky Way Skybox.mat using Guid(f116071f53e02704fa5fcf4650365b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2e0a5c5311711a019220821768c7b2b') in 0.019057 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 228.118861 seconds.
-  path: Assets/VRTemplateAssets/Prefabs
-  artifactKey: Guid(5efc164fa1be58443a419297eb912a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VRTemplateAssets/Prefabs using Guid(5efc164fa1be58443a419297eb912a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb27d371fd6b23fb4db3dad1bdd4560c') in 0.001191 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 91.966128 seconds.
-  path: Assets/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_celing_1.prefab
-  artifactKey: Guid(9c0a6df65fcfba243abb2cf9260b869f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_celing_1.prefab using Guid(9c0a6df65fcfba243abb2cf9260b869f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de09bea0a7c5d7e6d75f816eeb6e6d5e') in 0.028938 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 0.008226 seconds.
-  path: Assets/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_corner_1.prefab
-  artifactKey: Guid(43373d8b4f572cf468859751b9dcbbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_corner_1.prefab using Guid(43373d8b4f572cf468859751b9dcbbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0511e44c33b6ecac84ba9264918a6cb') in 0.029268 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
-========================================================================
-Received Import Request.
-  Time since last request: 0.008596 seconds.
-  path: Assets/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_3.prefab
-  artifactKey: Guid(10b4213a276bd0f4d93c345fd1420858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_3.prefab using Guid(10b4213a276bd0f4d93c345fd1420858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa12fffc45a6031f48a1ac96c0a823cf') in 0.041194 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_2.prefab
-  artifactKey: Guid(8e32be8f06ec06448ac537b609c2d7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_2.prefab using Guid(8e32be8f06ec06448ac537b609c2d7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8afc8e088339e12f97729101ef396ffb') in 0.035253 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_3_blue.prefab
-  artifactKey: Guid(8b5797a18349fb546be8acddc71151ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_3_blue.prefab using Guid(8b5797a18349fb546be8acddc71151ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcec23dabe7d671fc10e028e4905d89d') in 0.038740 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.
 AssetImportWorker is now disconnected from the server
